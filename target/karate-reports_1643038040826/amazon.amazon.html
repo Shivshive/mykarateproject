@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>amazon.amazon</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-01-24 08:54:17 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>amazon home page search ipad</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:19]"><span>[2:19]</span> <span>amazon home page search iphone</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">amazon/amazon.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">amazon test case</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">amazon</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">amazon home page search ipad</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>33139</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">59</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:53:14.026 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>driver &#39;https://www.amazon.in&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">33080</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">20:53:47.221 classpath:amazon/amazon.feature:8
+Given driver &#39;https://www.amazon.in&#39;
+http call failed after 30017 milliseconds for url: http://localhost:9515/session/83caecc77dd885583232a720d8f5c668/url
+classpath:amazon/amazon.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref failed">7</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>scenario [run] failed</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">java.util.LinkedHashMap cannot be cast to java.lang.String
+java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.lang.String
+	at com.intuit.karate.driver.WebDriver.screenshot(WebDriver.java:511)
+	at com.intuit.karate.driver.WebDriver.screenshot(WebDriver.java:504)
+	at com.intuit.karate.driver.Driver.onFailure(Driver.java:491)
+	at com.intuit.karate.core.ScenarioRuntime.execute(ScenarioRuntime.java:500)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:402)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+	at com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:43)
+	at com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:122)
+	at com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:118)
+	at com.intuit.karate.core.ParallelProcessor.lambda$toRunnable$0(ParallelProcessor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+20:53:47.226 classpath:amazon/amazon.feature:8
+Given driver &#39;https://www.amazon.in&#39;
+scenario [run] failed
+java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.lang.String
+	at com.intuit.karate.driver.WebDriver.screenshot(WebDriver.java:511)
+	at com.intuit.karate.driver.WebDriver.screenshot(WebDriver.java:504)
+	at com.intuit.karate.driver.Driver.onFailure(Driver.java:491)
+	at com.intuit.karate.core.ScenarioRuntime.execute(ScenarioRuntime.java:500)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:402)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+	at com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:43)
+	at com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:122)
+	at com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:118)
+	at com.intuit.karate.core.ParallelProcessor.lambda$toRunnable$0(ParallelProcessor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:19]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">amazon</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:19]</span>
+                <span class="scenario-name">amazon home page search iphone</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>33121</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:19]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure driver = { type: &#39;chromedriver&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">59</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:53:14.029 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref failed">20</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>driver &#39;https://www.amazon.in&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell failed">33062</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">20:53:14.173 preferred port 9515 not available, will use: 59272
+20:53:47.204 classpath:amazon/amazon.feature:20
+Given driver &#39;https://www.amazon.in&#39;
+http call failed after 30015 milliseconds for url: http://localhost:59272/session/3549de22d42f30955900e10d969d0c6f/url
+classpath:amazon/amazon.feature:20
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref failed">19</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>scenario [run] failed</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">java.util.LinkedHashMap cannot be cast to java.lang.String
+java.lang.ClassCastException: java.util.LinkedHashMap cannot be cast to java.lang.String
+	at com.intuit.karate.driver.WebDriver.screenshot(WebDriver.java:511)
+	at com.intuit.karate.driver.WebDriver.screenshot(WebDriver.java:504)
+	at com.intuit.karate.driver.Driver.onFailure(Driver.java:491)
+	at com.intuit.karate.core.ScenarioRuntime.execute(ScenarioRuntime.java:500)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:402)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+	at com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:43)
+	at com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:122)
+	at com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:118)
+	at com.intuit.karate.core.ParallelProcessor.lambda$toRunnable$0(ParallelProcessor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref failed">19</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>scenario [cleanup] failed</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">http call failed after 30004 milliseconds for url: http://localhost:59272/session/3549de22d42f30955900e10d969d0c6f/window
+com.intuit.karate.KarateException: http call failed after 30004 milliseconds for url: http://localhost:59272/session/3549de22d42f30955900e10d969d0c6f/window
+	at com.intuit.karate.core.ScenarioEngine.httpInvokeOnce(ScenarioEngine.java:586)
+	at com.intuit.karate.core.ScenarioEngine.httpInvoke(ScenarioEngine.java:545)
+	at com.intuit.karate.Http.method(Http.java:77)
+	at com.intuit.karate.Http.method(Http.java:86)
+	at com.intuit.karate.Http.delete(Http.java:103)
+	at com.intuit.karate.driver.WebDriver.close(WebDriver.java:342)
+	at com.intuit.karate.driver.WebDriver.quit(WebDriver.java:358)
+	at com.intuit.karate.core.ScenarioEngine.stop(ScenarioEngine.java:932)
+	at com.intuit.karate.core.ScenarioRuntime.afterRun(ScenarioRuntime.java:521)
+	at com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:426)
+	at com.intuit.karate.core.FeatureRuntime.processScenario(FeatureRuntime.java:181)
+	at com.intuit.karate.core.FeatureRuntime.access$000(FeatureRuntime.java:43)
+	at com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:122)
+	at com.intuit.karate.core.FeatureRuntime$1.process(FeatureRuntime.java:118)
+	at com.intuit.karate.core.ParallelProcessor.lambda$toRunnable$0(ParallelProcessor.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+	at com.intuit.karate.http.ApacheHttpClient.invoke(ApacheHttpClient.java:286)
+	at com.intuit.karate.core.ScenarioEngine.httpInvokeOnce(ScenarioEngine.java:576)
+	... 19 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at karate.org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at karate.org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at karate.org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at karate.org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at karate.org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at karate.org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at karate.org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at karate.org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at karate.org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at karate.org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at karate.org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at karate.org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at karate.org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at karate.org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at karate.org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at karate.org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at com.intuit.karate.http.ApacheHttpClient.invoke(ApacheHttpClient.java:273)
+	... 20 more
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
